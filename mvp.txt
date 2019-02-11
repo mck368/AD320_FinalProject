@@ -18,4 +18,4 @@ User Stories:
 
 9* As a user, I want to be able to link to social media sites from the web page.
 
-10* As a user, I want to navigate easily between my lists so that I can personalize my space easily.
+10* As a user, I want to be able to navigate to other pages so that I can access all the other pages
