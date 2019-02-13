@@ -1,9 +1,21 @@
-Minimum Viable Product
+Minimum Viable Product: user stories
 
-1.	The project demonstrates a catalog system to display the data to the users.
+1* As a user, I want to be able to read all items so that I am able to decide what I want to get from a list.
 
-2.	The project demonstrates a reference system to receive and display a list of movies from a request.
+2* As a user, I want to be able to create an item so that I am able to make a list.
 
-3.	The project demonstrates a useful way to search and find movies title in existing database.
+3* As a user, I want to be able to delete items so that I am able to remove from a list.
 
-4.	The project demonstrates a good customer service to receive feedback and questions from users.
+4* As a user, I want to be able to edit items so that I am able to change from a list.
+
+5* As a user, I want to be able to search for an item in the database.
+
+6* As a user, I want to have reasonable results for my search in the database.
+
+7* As a user, I want to click on an item, and get more information about it.
+
+8* As a user, I want to be able to send feedback to the website, or ask questions.
+
+9* As a user, I want to be able to link to social media sites from the web page.
+
+10* As a user, I want to be able to navigate to web pages so that I can access all the other pages.
