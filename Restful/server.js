@@ -7,7 +7,7 @@ const mc = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'data'
+    database: 'ilovemovies'
 });
 mc.connect();
 
@@ -29,11 +29,19 @@ app.get('/movies/:id', function (req, res) {
  
     let movie_id = req.params.id;
   
-    mc.query('SELECT * FROM movieinfo where MovieId=?', movie_id, function (error, results, fields) {
+    mc.query('SELECT * FROM movieinfo WHERE MovieId=?', movie_id, function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results[0], message: 'Movie list.' });
     });
  
+});
+
+app.get('/movies/search/:keyword', function (req, res) {
+    let keyword = req.params.keyword;
+    mc.query("SELECT * FROM movieinfo WHERE Title LIKE ? ", ['%' + keyword + '%'], function (error, results, fields) {
+        if (error) throw error;
+        return res.send({ error: false, data: results, message: 'Movie search list.' });
+    });
 });
 
 app.listen(8080, function () {
