@@ -16,7 +16,6 @@ router.get('/', function(req, res, next) {
     connection.query("SELECT * FROM movieInfo", function (err, result, fields) {
       if (err) throw err;
       res.send(result);
-      console.log('connected to database');
     });
   });
 });
