@@ -15,34 +15,36 @@ margin-left: 25px;
 color: #EAFAF1;
 }
 
+/************************WRAPPER***************************/
+
 #wrapper { 
   margin: 120px auto;
   width: 1000px;
   background: lightgray;
 }
 
-#leftcolumn {
- float: left;
- border: 1px solid #ccc;
- margin: 0px 0px 0px 0px;
- padding: 10px;
- height: 350px;
- width: 678px;
-}
 
-#rightcolumn {
- float: right;
- border: 1px solid #ccc;
- margin: 0px 0px 0px 0px;
- padding: 10px;
- height: 350px;
- width: 200px;
- display: inline;
- position: relative;
+#leftcolumn { 
+  float: left;
+  border: 1px solid #ccc;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  height: 350px;
+  width: 678px;
+} 
+
+#rightcolumn { 
+  float: right;
+  border: 1px solid #ccc;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  height: 350px;
+  width: 200px;
+}
 
 #boxes {
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 .leftbox{ 
@@ -125,7 +127,8 @@ input[type=text] {
   font-size: 14px; 
 }
 
-placeholder {
+::placeholder {
+ 
   color: lightgray;
   font-size: 14px;
 }
@@ -156,7 +159,7 @@ nav a {
   display: block;
   color: #EAFAF1;
 }
-  
+
 nav a:hover {
   color: black;
   background: #EAFAF1;
