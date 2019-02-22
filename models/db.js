@@ -7,7 +7,7 @@ const mc = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'data'
+    database: 'ilovemovies'
 });
 
 mc.connect(function(err) {

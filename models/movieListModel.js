@@ -13,7 +13,7 @@ var Movie = function(movie){
 };
 
 Movie.getAllMovie = function getAllMovie(result) {
-        sql.query("SELECT * from movieinfo", function (err, res) {
+        sql.query("SELECT * FROM movieinfo", function (err, res) {
                 if(err) {
                    console.log("error: ", err);
                    result(null, err);
@@ -24,7 +24,7 @@ Movie.getAllMovie = function getAllMovie(result) {
                 }
             }); 
 Movie.getMovieById = function createUser(movieId, result) {
-        sql.query("Select * from movieinfo where MovieId = ? ", movieId, function (err, res) {             
+        sql.query("Select * FROM movieinfo WHERE MovieId = ? ", movieId, function (err, res) {             
                 if(err) {
                    console.log("error: ", err);
                    result(err, null);
