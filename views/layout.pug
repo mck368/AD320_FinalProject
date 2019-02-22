@@ -6,6 +6,33 @@ html
     meta(name='google' content='notranslate')
     include header
   body
+    header
+      h1= title
+      p Welcome to #{title}
+      <!--nav in header-->
+      nav
+        ul
+          li home
+          li about
+          li movies
+          li friends
+          li blog
+          li contact
+      form
+        input(type='text', placeholder = 'search')
+
+    <!--Page Contents-->
     block content
-    block about
-    include footer
+
+    <!-- Begin Footer -->
+    footer
+      ul
+        li home
+        li about
+        li movies
+        li friends
+        li blog
+        li contact
+        small
+          p copy, 2019, All Rights Reserved
+
