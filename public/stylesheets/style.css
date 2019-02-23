@@ -11,8 +11,7 @@ body {
 }
 
 h1{
-margin-left: 10px;
-margin-right:25px;
+margin: auto 30px auto 25px;
 color: #F2F7F1;
 font-size:26px;
 font-family: simsun, Javanese Text, century gothic, Helvetica;
@@ -58,18 +57,36 @@ line-height: 30px;
   width: 650px;
 }
 
-#rightcolumn {
-  float: right;
-  border: 1px solid #ccc;
-  margin: 30px 10px;
-  padding: 10px;
-  height: 350px;
-  width: 200px;
-}
-
 #leftcolumn img {
   width:650px;
   margin-bottom:40px;
+}
+
+#rightcolumn {
+  float: right;
+  /*border: 1px solid #ccc;*/
+  margin-top:30px;
+  padding: 10px;
+  height: 350px;
+  width: 220px;
+  list-style-type: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#rightcolumn h2{
+  margin: 30px auto 10px auto;
+  color: #242425;
+  font-family: simsun, century gothic, Helvetica;
+  font-size:16px;
+  line-height: 25px;
+  width: 100%;
+}
+
+#rightcolumn img {
+  width:40px;
+  margin:10px 10px;
 }
 
 /*************************HEADER**************************/
@@ -129,7 +146,7 @@ nav li {
 }
 
 nav a {
-  margin-top:5px;
+  /*margin-top:5px;*/
   text-decoration: none;
   display: block;
   color: #F2F7F1;
@@ -147,13 +164,14 @@ footer {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background: gray;
+  background: #FAFCFA;
   line-height: 50px;
   clear: both;
 }
 
 footer ul {
   padding-left: 20px;
+  color: #EAFAF1;
 }
 
 footer li {
@@ -164,10 +182,17 @@ footer li {
   color: #EAFAF1;
 }
 
-footer a {
+footer p {
   color: #EAFAF1;
+}
+
+footer a {
+  color: #242425;
+  text-decoration: none;
 }
 
 footer a:hover {
   color: black;
+  text-decoration: none;
+  color: #363936;
 }
