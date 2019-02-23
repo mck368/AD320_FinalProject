@@ -2,14 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-
-const mc = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'ilovemovies'
-});
-mc.connect();
+const mc = require('./models/db');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,8 +25,7 @@ app.get('/movies/:id', function (req, res) {
     mc.query('SELECT * FROM movieinfo WHERE MovieId=?', movie_id, function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results[0], message: 'Movie list.' });
-    });
- 
+    }); 
 });
 
 app.get('/movies/search/:keyword', function (req, res) {
