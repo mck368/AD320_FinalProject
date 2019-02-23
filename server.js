@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
 const mc = require('./models/db');
 
 app.use(bodyParser.json());
