@@ -13,6 +13,8 @@ var blogVhsRouter = require('./routes/blog-vhs');
 var blogFilmRouter = require('./routes/blog-filmmakers');
 var blogSeattleRouter = require('./routes/blog-seattlemovies');
 var contactRouter = require('./routes/contact');
+var myMoviesRouter = require('./routes/my-friends');
+var myFriendsRouter = require('./routes/my-movies');
 
 var app = express();
 
@@ -34,7 +36,9 @@ app.use('/contact', contactRouter);
 app.use('/blog-seattlemovies', blogPopcornRouter);
 app.use('/blog-filmmakers', blogVhsRouter);
 app.use('/blog-vhs', blogSeattleRouter);
-app.use('/blog-popcorn', blogFilmRouter);
+app.use('/blog-filmmakers', blogFilmRouterRouter);
+app.use('/my-movies', myMoviesRouter);
+app.use('/my-friends', myFriendsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
