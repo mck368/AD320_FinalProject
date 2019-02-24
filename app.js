@@ -36,7 +36,7 @@ app.use('/contact', contactRouter);
 app.use('/blog-seattlemovies', blogPopcornRouter);
 app.use('/blog-filmmakers', blogVhsRouter);
 app.use('/blog-vhs', blogSeattleRouter);
-app.use('/blog-filmmakers', blogFilmRouterRouter);
+app.use('/blog-filmmakers', blogFilmRouter);
 app.use('/my-movies', myMoviesRouter);
 app.use('/my-friends', myFriendsRouter);
 
