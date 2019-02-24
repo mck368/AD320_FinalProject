@@ -1,18 +1,15 @@
 var express = require('express');
 var router = express.Router();
-var mysql = require('mysql');
+var mc = require('../models/db');
 
-/* GET movies page.*/
+/* GET movies page. */
 router.get('/', function(req, res, next) {
-  res.render('movies', { title: 'Movies' });
-});
+  
+  const data = {
+    title: 'Movies Page'
+  }
 
-//connect to database
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'password',
-  database : 'iLoveMovies'
+  res.render('movies', data);
 });
 
 /*display contents of movie table from database*/
@@ -25,8 +22,5 @@ router.get('/', function(req, res, next) {
     });
   });
 });
-
-
-
 
 module.exports = router;
