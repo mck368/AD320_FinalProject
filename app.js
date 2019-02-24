@@ -6,9 +6,13 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
 var moviesRouter = require('./routes/movies');
 var aboutRouter = require('./routes/about');
+var blogPopcornRouter = require('./routes/blog-popcorn');
+var blogVhsRouter = require('./routes/blog-vhs');
+var blogFilmRouter = require('./routes/blog-filmmakers');
+var blogSeattleRouter = require('./routes/blog-seattlemovies');
+var contactRouter = require('./routes/contact');
 
 var app = express();
 
@@ -26,6 +30,11 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/movies', moviesRouter);
 app.use('/about', aboutRouter);
+app.use('/contact', contactRouter);
+app.use('/blog-seattlemovies', blogPopcornRouter);
+app.use('/blog-filmmakers', blogVhsRouter);
+app.use('/blog-vhs', blogSeattleRouter);
+app.use('/blog-popcorn', blogFilmRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
