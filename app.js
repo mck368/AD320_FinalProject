@@ -33,24 +33,11 @@ app.use('/movies', moviesRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/user-profile', userProfileRouter);
-app.use('/blog-seattlemovies', blogPopcornRouter);
-<<<<<<< HEAD
-<<<<<<< HEAD
+app.use('/blog-popcorn', blogPopcornRouter);
 app.use('/blog-vhs', blogVhsRouter);
 app.use('/blog-seattlemovies', blogSeattleRouter);
 app.use('/blog-filmmakers', blogFilmRouter);
-app.use('/my-movies', myMoviesRouter);
-app.use('/my-friends', myFriendsRouter);
-=======
-app.use('/blog-filmmakers', blogVhsRouter);
-app.use('/blog-vhs', blogSeattleRouter);
-app.use('/blog-popcorn', blogFilmRouter);
->>>>>>> parent of fb06d5d... commiting to a branch that shouldnt exist...
-=======
-app.use('/blog-filmmakers', blogVhsRouter);
-app.use('/blog-vhs', blogSeattleRouter);
-app.use('/blog-popcorn', blogFilmRouter);
->>>>>>> parent of fb06d5d... commiting to a branch that shouldnt exist...
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
