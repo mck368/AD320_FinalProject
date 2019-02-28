@@ -60,6 +60,8 @@ VALUES
 (25,'Halloween', 'R', 'Horror', '1978-10-27', 7.8, 'English'),
 (26,'Blair Witch Project', 'R', 'Horror', '1999-07-30', 6.4, 'English');
 
+ALTER TABLE `movieInfo` MODIFY `MovieID` int(11) NOT NULL AUTO_INCREMENT;
+
 INSERT INTO users
 VALUES
 ('Harry','harry@hogwarts.com','Raiders of the Lost Arc','Action'),
