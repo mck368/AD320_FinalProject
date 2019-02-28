@@ -3,26 +3,35 @@ extends layout
 block content
   <!-- Begin Wrapper -->
   div(id='wrapper')
-  <!-- Begin Left Column -->
-    div(id='leftcolumn')
-      Left Column
-  <!-- End Left Column -->
-  <!-- Begin Right Column -->
-    div(id='rightcolumn')
-      Right Column
-  <!-- End Right Column -->
-  <!-- Begin boxes -->
-  div(id='boxes')
-    div(class='leftbox')
-      h2 Staff Picks!
-      p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-  <!-- end left box -->
-    div(class='middlebox')
-      h2 Staff Picks!
-      p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-  <!-- end middle box -->
-    div(class='rightbox')
-      h2 Staff Picks!
-      p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-  <!-- end right box -->
-  <!-- end boxes -->
+
+    <!-- Begin quotebox -->
+    div(id='quotebox')
+      h2 For me, the cinema is not a slice of life, but a piece of cake.
+      h3 -Alfred Hitchcock
+    <!-- End div quotebox -->
+
+    <!-- Begin Left Column -->
+      div(id='leftcolumn')
+        a(href='/blog-filmmakers' target='_blank')
+          img(
+            src='images/filmmakers.png'
+            alt='film_makers'
+          )
+        a(href='/blog-vhs' target='_blank')
+          img(
+            src='images/vhs.png'
+            alt='vhs'
+          )
+        a(href='/blog-popcorn' target='_blank')
+          img(
+            src='images/popcorn.png'
+            alt='popcorn'
+          )
+        a(href='/blog-seattlemovies' target='_blank')
+          img(
+            src='images/seattlemovies.png'
+            alt='seattlemovies'
+          )
+    <!-- End Left Column -->
+
+    include right-column
