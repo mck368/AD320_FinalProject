@@ -18,6 +18,7 @@ CREATE TABLE movieInfo (
     StarRating		DECIMAL(2,1),
     MovieLanguage	VARCHAR(30)
 );
+ALTER TABLE movieInfo MODIFY MovieID INT AUTO_INCREMENT PRIMARY KEY;
 
 CREATE TABLE users (	
     userName		VARCHAR(50)			NOT NULL,
@@ -59,8 +60,6 @@ VALUES
 (24,'Anchorman', 'PG-13', 'Comedy', '2004-07-09', 7.2, 'English'),
 (25,'Halloween', 'R', 'Horror', '1978-10-27', 7.8, 'English'),
 (26,'Blair Witch Project', 'R', 'Horror', '1999-07-30', 6.4, 'English');
-
-ALTER TABLE `movieInfo` MODIFY `MovieID` int(11) NOT NULL AUTO_INCREMENT;
 
 INSERT INTO users
 VALUES
