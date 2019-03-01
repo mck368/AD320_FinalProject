@@ -176,7 +176,7 @@ nav a:hover {
 /************************FOOTER***************************/
 
 footer {
-  /*position: fixed;*/
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 50px;
@@ -187,7 +187,6 @@ footer {
 
 footer ul {
   padding-left: 20px;
-  color: #EAFAF1;
 }
 
 footer li {
@@ -195,12 +194,8 @@ footer li {
   list-style-type: none;
   margin-right: 30px;
   font-size: .875em;
-  color: #EAFAF1;
 }
 
-footer p {
-  color: #EAFAF1;
-}
 
 footer a {
   color: #242425;
