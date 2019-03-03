@@ -1,13 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET personal user page. */
+/* GET movies page. */
 router.get('/', function(req, res, next) {
-
+  
   const data = {
-    title: 'My Profile'
+    title: 'My movies'
   }
-  res.render('user profile', data);
+
+  res.render('my movies', data);
 });
 
 module.exports = router;
