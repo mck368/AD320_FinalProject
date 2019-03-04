@@ -1,14 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET contact page. */
+/* GET personal user page. */
 router.get('/', function(req, res, next) {
 
   const data = {
-    title: 'Contact Us'
+    title: 'My Profile'
   }
-
-  res.render('contact', data);
+  res.render('user_profile', data);
 });
 
 module.exports = router;

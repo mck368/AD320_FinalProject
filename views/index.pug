@@ -1,22 +1,37 @@
 extends layout
 
 block content
-  div( id="wrapper")
-    div( id="leftcolumn")
-      p Left Column
-    div( id="rightcolumn")
-      p Right Column
-    
-    div( id="boxes")  
-      div(class='leftbox')
-        h2 Staff Picks!
-        p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-  
-      div(class='middlebox')
-        h2 Staff Picks!
-        p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    
-      div(class='rightbox')
-        h2 Staff Picks!
-        p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    
+  <!-- Begin Wrapper -->
+  div(id='wrapper')
+
+    <!-- Begin quotebox -->
+    div(id='quotebox')
+      h2 For me, the cinema is not a slice of life, but a piece of cake.
+      h3 -Alfred Hitchcock
+    <!-- End div quotebox -->
+
+    <!-- Begin Left Column -->
+      div(id='leftcolumn')
+        a(href='/blog_filmmakers' target='_blank')
+          img(
+            src='images/filmmakers.png'
+            alt='film_makers'
+          )
+        a(href='/blog_vhs' target='_blank')
+          img(
+            src='images/vhs.png'
+            alt='vhs'
+          )
+        a(href='/blog_popcorn' target='_blank')
+          img(
+            src='images/popcorn.png'
+            alt='popcorn'
+          )
+        a(href='/blog_seattlemovies' target='_blank')
+          img(
+            src='images/seattlemovies.png'
+            alt='seattlemovies'
+          )
+    <!-- End Left Column -->
+
+    include right-column
