@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div( id="wrapper")
+    div(id="leftcolumn")
+      div(id="form")
+        form(method='POST' action='/contactForm.js' onsubmit ='return validateForm()')
+          ul
+          li
+          div(form)
+            label(for='name') Name:
+            input#name.form(type='text', placeholder = 'first and last' name='name')
+          li
+          div(form)
+            label(for='email') Email:
+            input#email.form(type='email', placeholder = 'name@email.com' name='email')
+          li
+          div(form)
+            label(for='message') Message:
+            input#message.form(type='TEXTAREA', placeholder = 'Tell us what you think...' name='message')
+          li
+          button.btn.btn-primary(type='submit') Send
