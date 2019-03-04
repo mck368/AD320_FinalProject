@@ -4,13 +4,22 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
-var aboutRouter = require('./routes/about');
 var moviesRouter = require('./routes/movies');
 var friendsRouter = require('./routes/friends');
-var blogRouter = require('./routes/blog');
+var user_ProfileRouter = require('./routes/user_profile');
+var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var usersRouter = require('./routes/users');
+
+var my_MoviesRoter = require('./routes/my_movies');
+var my_FriendsRouter = require('./routes/my_friends');
+
+var blog_FilmRouter = require('./routes/blog_filmmakers');
+var blog_VhsRouter = require('./routes/blog_vhs');
+var blog_PopcornRouter = require('./routes/blog_popcorn');
+var blog_SeattleRouter = require('./routes/blog_seattlemovies');
 
 var app = express();
 
@@ -25,12 +34,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/about', aboutRouter);
 app.use('/movies', moviesRouter);
 app.use('/friends', friendsRouter);
-app.use('/blog', blogRouter);
+app.use('/user_profile', user_ProfileRouter);
+app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/users', usersRouter);
+
+app.use('/my_movies', my_MoviesRoter);
+app.use('/my_friends', my_FriendsRouter);
+
+app.use('/blog_filmmakers', blog_FilmRouter);
+app.use('/blog_vhs', blog_VhsRouter);
+app.use('/blog_popcorn', blog_PopcornRouter);
+app.use('/blog_seattlemovies', blog_SeattleRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

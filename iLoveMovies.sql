@@ -18,6 +18,7 @@ CREATE TABLE movieInfo (
     StarRating		DECIMAL(2,1),
     MovieLanguage	VARCHAR(30)
 );
+ALTER TABLE movieInfo MODIFY MovieID INT AUTO_INCREMENT PRIMARY KEY;
 
 CREATE TABLE users (	
     userName		VARCHAR(50)			NOT NULL,

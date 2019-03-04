@@ -2,8 +2,15 @@ doctype html
 html
   head
     title=title
+
+    <!--Remy Sharp Shim -->
+    <!--[if lte IE 9]>
+    script (src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'type='text/javascript')
+    <![endif]-->
+
     link(rel='stylesheet' type='text/css' href='/stylesheets/style.css')
     meta(name='google' content='notranslate')
+
   include header
   body
     block content

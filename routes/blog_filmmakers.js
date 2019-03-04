@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET contact page. */
+/* GET Blog-filmakers page. */
 router.get('/', function(req, res, next) {
 
   const data = {
-    title: 'Contact Us'
+    title: 'Blog: Film Makers'
   }
 
-  res.render('contact', data);
+  res.render('blog_filmmakers', data);
 });
 
 module.exports = router;
