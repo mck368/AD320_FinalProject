@@ -4,16 +4,17 @@ block content
   div(id="wrapper")
     div(id="leftcolumn")
       div(id="form")
+        h2 Contact Us!
         form(id = 'contact-form' method='POST' action='/contact')
           ul
             li
               label(for='name') Name:
-              input(type='text' name='name')
+              input(type='text' name='name' placeholder='Full Name')
             li
               label(for='email') Email:
-              input(type='email' name='email')
+              input(type='email' name='email' placeholder='Email')
             li
               label(for='message') Message:
-              input(type='TEXTAREA' name='message')
+              input(type='textarea' name='message')
             li
               input(type='submit' value='submit')
