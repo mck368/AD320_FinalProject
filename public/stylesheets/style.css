@@ -12,13 +12,12 @@ body {
 
 h1{
 margin: auto 30px auto 25px;
-color: black;
+color: #f2f2f2;
 font-size:26px;
 font-family: Javanese Text, century gothic, Helvetica;
 }
 
 h2{
-margin-left: 150px;
 background-color: #f2f2f2;
 color: #242425;
 font-family: simsun, Javanese Text, century gothic, Helvetica;
@@ -117,26 +116,7 @@ header {
   background: #242425;
 }
 
-form {
-  float: right;
-  padding-right: 20px;
-  height:70px;
-}
 
-input[type=text] {
-  height: 25px;
-  line-height: 25px;
-  border-radius: 14px;
-  width: 290px;
-  padding-left: 10px;
-  font-size: 14px;
-  background-color:#F2F7F1;
-}
-
-::placeholder {
-  color: lightgray;
-  font-size: 14px;
-}
 
 nav {
   margin-top:10px;
@@ -206,4 +186,52 @@ footer a:hover {
   color: black;
   text-decoration: none;
   color: #363936;
+}
+
+/******************************FORM ITEMS************************/
+form {
+  float: right;
+  height:70px;
+  max-width: 580px;
+
+}
+
+input[type=text], input[type=email] {
+  height: 25px;
+  line-height: 25px;
+  width: 290px;
+  padding-left: 3px;
+  font-size: 14px;
+  background-color:#F2F7F1;
+}
+
+::placeholder {
+  color: lightgray;
+  font-size: 14px;
+}
+
+input[type=textarea] {
+  height: 100px;
+  width: 290px;
+  background-color:#F2F7F1;
+  padding-left: 3px;
+  vertical-align: top;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+form ul {
+  margin-bottom: 15px;
+}
+
+form li {
+  list-style-type: none;
+  margin: 0 0 5px 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
 }
