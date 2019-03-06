@@ -116,6 +116,11 @@ header {
   background: #242425;
 }
 
+header form{
+  background-color:#242425;
+  padding:0px;
+}
+
 header input[type=text] {
   border-radius: 15px;
   margin-right: 40px;
@@ -198,9 +203,29 @@ footer a:hover {
 /******************************FORM ITEMS************************/
 form {
   float: right;
-  height:70px;
   max-width: 580px;
+  background-color: white;
+  padding:30px 30px 10px 20px;
+}
 
+form h2{
+  background-color:white;
+  margin-bottom:20px;
+  font-family: times new roman, sans-serif;
+}
+
+#thanks h2{
+  font-family: times new roman, sans-serif;
+  text-align:center;
+  text-size:20px;
+}
+
+input[type=submit]{
+  border:none;
+  margin-top: 20px;
+  padding:10px 20px;
+  background:#242425;
+  color:white;
 }
 
 input[type=text], input[type=email] {
@@ -209,7 +234,7 @@ input[type=text], input[type=email] {
   width: 290px;
   padding-left: 3px;
   font-size: 14px;
-  background-color:#F2F7F1;
+  background-color:white;
 }
 
 ::placeholder {
@@ -220,17 +245,16 @@ input[type=text], input[type=email] {
 input[type=textarea] {
   height: 100px;
   width: 290px;
-  background-color:#F2F7F1;
-  padding-left: 3px;
-  vertical-align: top;
+  background-color:white;
 }
 
 textarea {
-  vertical-align: top;
+
 }
 
 form ul {
   margin-bottom: 15px;
+  background-color:white;
 }
 
 form li {
@@ -241,4 +265,7 @@ form li {
 label {
   display: block;
   margin-bottom: 5px;
+  background-color:white;
+  font-family: times new roman, sans-serif;
+  font-size: 15px;
 }
