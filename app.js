@@ -33,6 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// connects router to the webpages
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
 app.use('/friends', friendsRouter);
@@ -40,10 +41,8 @@ app.use('/user_profile', user_ProfileRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/users', usersRouter);
-
 app.use('/my_movies', my_MoviesRoter);
 app.use('/my_friends', my_FriendsRouter);
-
 app.use('/blog_filmmakers', blog_FilmRouter);
 app.use('/blog_vhs', blog_VhsRouter);
 app.use('/blog_popcorn', blog_PopcornRouter);
@@ -64,5 +63,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// localhost:3000
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000...')
+})
 
 module.exports = app;
