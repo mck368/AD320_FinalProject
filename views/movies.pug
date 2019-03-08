@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
   div( id="wrapper")
     div( id="leftcolumn")
       p #{title}
@@ -10,3 +11,64 @@ block content
       ul
         for movie in movies
           li= "Title: " + movie.Title + ", Genre: " + movie.Genre + ", Rating: " + movie.Rating
+   
+  <!--This will work for now, but we need to get filepaths from the database eventually-->
+  div( id="myDIV")
+  img(src='images/ace_ventura.jpg' width='150' height='150')
+  h2 Ace Ventura
+  p A goofy detective specializing in animals goes in search of the missing mascot of the Miami Dolphins.
+
+
+  img(src='images/big_daddy.jpg' width='150' height='150')
+  h2 Big Daddy
+  p A lazy law school grad adopts a kid to impress his girlfriend, but everything doesn&apos;t go as planned and he becomes the unlikely foster father.
+
+
+  img(src='images/elf.jpg' width='150' height='150')
+  h2 Elf
+  p After discovering he is a human, a man raised as an elf at the North Pole decides to travel to New York City to locate his real father. 
+
+
+  img(src='images/glass.jpg' width='150' height='150')
+  h2 Glass
+  p Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. 
+
+
+  img(src='images/happy_gilmore.jpg' width='150' height='150')
+  h2 Happy Gilmore
+  p A rejected hockey player puts his skills to the golf course to save his grandmother's house. 
+
+
+  img(src='images/inception.jpg' width='150' height='150')
+  h2 Inception
+  p A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.
+
+
+  img(src='images/lego_movie.jpg' width='150' height='150')
+  h2 Lego Movie
+  p An ordinary LEGO construction worker, thought to be the prophesied as "special", is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis. 
+
+
+  img(src='images/matrix.jpg' width='150' height='150')
+  h2 Matrix
+  p A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers. 
+
+
+  img(src='images/murder_by_numbers.jpg' width='150' height='150')
+  h2 Murder by Numbers
+  p Two gifted high school students execute a "perfect" murder - then become engaged in an intellectual contest with a seasoned homicide detective. 
+
+
+  img(src='images/requiem_for_a_dream.jpg' width='150' height='150')
+  h2 Requiem for a Dream
+  p The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.
+
+
+  img(src='images/truman.jpg' width='150' height='150')
+  h2 Truman
+  p An insurance salesman discovers his whole life is actually a reality TV show. 
+
+
+  img(src='images/50_first_dates.jpg' width='150' height='150')
+  h2 50 First Dates    
+  p Henry Roth is a man afraid of commitment up until he meets the beautiful Lucy. They hit it off and Henry think he&apos;s finally found the girl of his dreams, until he discovers she has short-term memory loss and forgets him the next day.    
