@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 router.get('/api/all', function(req, res, next) {
   db.query("SELECT * FROM movieInfo", function (err, result, fields) {
     if (err) {
-      res.status(500).send(error);
+      res.status(500).send(err);
     }
     res.send(result);
   });
