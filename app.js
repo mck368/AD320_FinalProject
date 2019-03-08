@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
+// routers for pages
 var indexRouter = require('./routes/index');
 var moviesRouter = require('./routes/movies');
 var friendsRouter = require('./routes/friends');
@@ -12,10 +12,8 @@ var user_ProfileRouter = require('./routes/user_profile');
 var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var usersRouter = require('./routes/users');
-
 var my_MoviesRoter = require('./routes/my_movies');
 var my_FriendsRouter = require('./routes/my_friends');
-
 var blog_FilmRouter = require('./routes/blog_filmmakers');
 var blog_VhsRouter = require('./routes/blog_vhs');
 var blog_PopcornRouter = require('./routes/blog_popcorn');
@@ -52,13 +50,11 @@ app.use('/blog_seattlemovies', blog_SeattleRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
   // render the error page
   res.status(err.status || 500);
   res.render('error');

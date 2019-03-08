@@ -3,4 +3,10 @@ extends layout
 block content
   div( id="wrapper")
     div( id="leftcolumn")
-      p Left Column
+      p #{title}
+
+      p Here are some movies:
+
+      ul
+        for movie in movies
+          li= "Title: " + movie.Title + ", Genre: " + movie.Genre + ", Rating: " + movie.Rating
