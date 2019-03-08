@@ -1,23 +1,27 @@
+// Initiallising node modules
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mc = require('./models/db');
 
+// Body Parser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+// GET API
 app.get('/', function (req, res) {
     return res.send({ error: true, message: 'Hello, I Love Movies!!' })
 });
 
-app.get('/movies', function (req, res) {
+app.get('/api/all', function (req, res) {
     mc.query('SELECT * FROM movieinfo', function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results, message: 'All list.' });
     });
 });
 
-app.get('/movies/:id', function (req, res) {
+app.get('/api/:id', function (req, res) {
  
     let movie_id = req.params.id;
   
@@ -27,7 +31,7 @@ app.get('/movies/:id', function (req, res) {
     }); 
 });
 
-app.get('/movies/search/:keyword', function (req, res) {
+app.get('/search/:keyword', function (req, res) {
     
     let keyword = req.params.keyword;
     
@@ -37,7 +41,7 @@ app.get('/movies/search/:keyword', function (req, res) {
     });
 });
 
-app.post('/movies/add/:title', function (req, res) { 
+app.post('/add/:title', function (req, res) { 
     
     let title = req.params.title; 
     
@@ -51,18 +55,18 @@ app.post('/movies/add/:title', function (req, res) {
     });
 });
 
-app.put('/movies/update/:id', function (req, res) { 
+app.put('/update/:id', function (req, res) { 
 
-    let movie_id = req.body.id;
-    let title = req.body.title;
+    let movie_id = req.params.id;
+    let title = req.query.title;
  
-    mc.query('UPDATE movieinfo SET Title = ? WHERE MovieID = ?', [ movie_id, title ], function (error, results, fields) {
+    mc.query('UPDATE movieinfo SET Title = ? WHERE MovieID = ?', [ title, movie_id ], function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results, message: 'Movie has been updated successfully.' });
     });
 }); 
 
-app.delete('/movies/del/:id', function (req, res) {
+app.delete('/del/:id', function (req, res) {
  
     let movie_id = req.params.id;
  
@@ -72,6 +76,7 @@ app.delete('/movies/del/:id', function (req, res) {
     });
 });
 
+// Setting up server
 app.listen(8080, function () {
     console.log('Node app is running on port 8080');
 }); 
