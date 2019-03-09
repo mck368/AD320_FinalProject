@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
+// routers for pages
 var indexRouter = require('./routes/index');
 var moviesRouter = require('./routes/movies');
 var friendsRouter = require('./routes/friends');
@@ -12,10 +12,8 @@ var user_ProfileRouter = require('./routes/user_profile');
 var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var usersRouter = require('./routes/users');
-
 var my_MoviesRoter = require('./routes/my_movies');
 var my_FriendsRouter = require('./routes/my_friends');
-
 var blog_FilmRouter = require('./routes/blog_filmmakers');
 var blog_VhsRouter = require('./routes/blog_vhs');
 var blog_PopcornRouter = require('./routes/blog_popcorn');
@@ -33,6 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// connects router to the webpages
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
 app.use('/friends', friendsRouter);
@@ -40,10 +39,8 @@ app.use('/user_profile', user_ProfileRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/users', usersRouter);
-
 app.use('/my_movies', my_MoviesRoter);
 app.use('/my_friends', my_FriendsRouter);
-
 app.use('/blog_filmmakers', blog_FilmRouter);
 app.use('/blog_vhs', blog_VhsRouter);
 app.use('/blog_popcorn', blog_PopcornRouter);
