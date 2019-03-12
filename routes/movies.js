@@ -53,7 +53,7 @@ router.get('/api/search/:keyword', function (req, res) {
     
     let keyword = req.params.keyword;
     
-    db.query('SELECT * FROM movieinfo WHERE Title LIKE ? ', ['%' + keyword + '%'], function (error, results, fields) {
+    db.query('SELECT * FROM movieinfo WHERE Title LIKE ? limit 3', ['%' + keyword + '%'], function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results, message: 'Movie search list.' });
     });
