@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const mc = require('./models/db');
+const mc = require('./db');
 
 // Body Parser Middleware
 app.use(bodyParser.json());
