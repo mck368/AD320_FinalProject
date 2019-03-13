@@ -111,29 +111,24 @@ line-height: 30px;
 
 .left-box{ 
   float: left;
-  width: 23%;
-  margin-bottom: 15px;    
+  width: 23%;   
 }
 .middle-box{    
   float: left;
-  width: 23%;
-  margin-bottom: 15px;   
+  width: 23%;    
 }
 .right-box{    
   float: left;
-  width: 23%;
-  margin-bottom: 15px;     
+  width: 23%;    
 }
-
 .last-box{
   float: left;
-  width: 23%;
-  margin-bottom: 15px;     
+  width: 23%;    
 }
-
 #myDIV img {
   width: 180px;
   height: 200px;
+  margin-bottom: 60px;
 }
 
 #myDIV a {
