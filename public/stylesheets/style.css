@@ -103,6 +103,43 @@ line-height: 30px;
   /*background: #EAFAF1;*/
 }
 
+#myDIV {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+
+.left-box{ 
+  float: left;
+  width: 23%;
+  margin-bottom: 15px;    
+}
+.middle-box{    
+  float: left;
+  width: 23%;
+  margin-bottom: 15px;   
+}
+.right-box{    
+  float: left;
+  width: 23%;
+  margin-bottom: 15px;     
+}
+
+.last-box{
+  float: left;
+  width: 23%;
+  margin-bottom: 15px;     
+}
+
+#myDIV img {
+  width: 180px;
+  height: 200px;
+}
+
+#myDIV a {
+  text-decoration: none;
+}
+
 /*************************HEADER**************************/
 
 header {
