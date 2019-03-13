@@ -1,15 +1,8 @@
 var express = require('express');
 var router = express.Router();
+const db = require('../db');
 
 var mysql = require('mysql');
-
-//connect to database
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'password',
-  database : 'iLoveMovies'
-});
 
 /*display contents of users table from database*/
 router.get('/', function(req, res,) {
