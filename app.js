@@ -14,10 +14,7 @@ var contactRouter = require('./routes/contact');
 var usersRouter = require('./routes/users');
 var my_MoviesRoter = require('./routes/my_movies');
 var my_FriendsRouter = require('./routes/my_friends');
-var blog_FilmRouter = require('./routes/blog_filmmakers');
-var blog_VhsRouter = require('./routes/blog_vhs');
-var blog_PopcornRouter = require('./routes/blog_popcorn');
-var blog_SeattleRouter = require('./routes/blog_seattlemovies');
+var blog = require('./routes/blog');
 
 var app = express();
 
@@ -41,10 +38,8 @@ app.use('/contact', contactRouter);
 app.use('/users', usersRouter);
 app.use('/my_movies', my_MoviesRoter);
 app.use('/my_friends', my_FriendsRouter);
-app.use('/blog_filmmakers', blog_FilmRouter);
-app.use('/blog_vhs', blog_VhsRouter);
-app.use('/blog_popcorn', blog_PopcornRouter);
-app.use('/blog_seattlemovies', blog_SeattleRouter);
+app.use('/blog', blog);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
