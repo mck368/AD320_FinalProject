@@ -338,3 +338,18 @@ label {
   padding: 10px;
   margin-left: 10px;
 }
+
+#profile{
+  width: 700px;
+}
+#profile h2{
+  font-size: 25px;
+  font-family:  sans-serif, arial;
+}
+
+#profile img{
+  width:100px;
+  margin-top:30px;
+  margin-bottom: 70px;
+  border:2px solid #ccc;
+}
