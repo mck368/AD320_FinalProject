@@ -1,35 +1,12 @@
 extends layout
 
-block content
+block scripts
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+  script(src='/javascripts/getFriends.js')
 
-  html 
-        script.
-            $(document).ready(function(){
-            $.getJSON("http://localhost:3000/friends/api/all", (result)=>{
-            $.each(result, (i, field) => {
-            var title = "<div class='film'><h3 film_id="
-            +field.userName
-            +" style='cursor: pointer'>"+field.Email+"</h3>"
-            +"<div class='info' hidden='true'>" + field.FavoriteMovie
-            +"<br />Rating: "
-            + field.FavoriteGenre
-            +"<br />Release Year: "
-            + field.FavoriteGenre
-            + "</div></div>";
-            $("#list").append(title);
-            });
-            $('.film').on('click', function(){
-            if ($(this).children('.info').is(':hidden')){
-            $('.info').hide();
-            $(this).children('.info').show();
-            } else {
-            $(this).children('.info').hide();
-            }
-            });
-            });
-            });
-  body
-    div( id="wrapper")
-    div( id="film")
-        h1 #{title}
-        #list  
+block content
+  div( id="wrapper")
+  div( id="film")
+      h1 #{title}
+      #list
