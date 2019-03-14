@@ -9,14 +9,13 @@ html
     <![endif]-->
 
     link(rel='stylesheet' type='text/css' href='/stylesheets/style.css')
-    
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-    script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')    
-    
+
+    block scripts
+
     meta(name='google' content='notranslate')
 
-  include header
+  include hf/header
   include right-column
   body
     block content
-    include footer
+    include hf/footer
