@@ -319,3 +319,17 @@ label {
   font-family: times new roman, sans-serif;
   font-size: 15px;
 }
+
+.film { 
+  width: 350px;
+  padding: 10px;
+}
+
+.film h3 {
+  margin-left: 10px;
+}
+
+.info {
+  padding: 10px;
+  margin-left: 10px;
+}
