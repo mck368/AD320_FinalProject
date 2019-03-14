@@ -111,32 +111,43 @@ line-height: 30px;
 #film h1{
   color: #363936;
 }
-#myDIV {
-  margin: 0;
-  padding: 0;
-  width: 90%;
-}
 
-.left-box{ 
+.left-box{
   float: left;
-  width: 23%;   
+  width: 23%;
 }
-.middle-box{    
+.middle-box{
   float: left;
-  width: 23%;    
+  width: 23%;
 }
-.right-box{    
+.right-box{
   float: left;
-  width: 23%;    
+  width: 23%;
 }
 .last-box{
   float: left;
-  width: 23%;    
+  width: 23%;
 }
+
+#myDIV {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#myDIV h2{
+  background-color:white;
+  padding:10px 0px 0px 30px ;
+  font-size:20px;
+  width:170px;
+}
+
 #myDIV img {
-  width: 180px;
-  height: 200px;
-  margin-bottom: 60px;
+  width: 150px;
+  height: 175px;
+  margin:0px 50px 60px 0px;
+  background-color:white;
+  padding:25px;
 }
 
 #myDIV a {
