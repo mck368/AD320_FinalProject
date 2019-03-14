@@ -56,6 +56,11 @@ line-height: 30px;
   width: 550px;
 }
 
+#leftcolumn p{
+  line-height:30px;
+  font-size:17px;
+}
+
 #leftcolumn img {
   width:650px;
   margin-bottom:40px;
@@ -320,7 +325,7 @@ label {
   font-size: 15px;
 }
 
-.film { 
+.film {
   width: 350px;
   padding: 10px;
 }
