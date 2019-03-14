@@ -103,6 +103,14 @@ line-height: 30px;
   /*background: #EAFAF1;*/
 }
 
+#film{
+  line-height: 30px;
+  font-size: 16px;
+  margin: 80px;
+}
+#film h1{
+  color: #363936;
+}
 #myDIV {
   margin: 0;
   padding: 0;
