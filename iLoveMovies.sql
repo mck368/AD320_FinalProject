@@ -12,19 +12,19 @@ USE iLoveMovies;
 CREATE TABLE movieInfo (
 	MovieID			INT								NOT NULL,
     Title			VARCHAR(50)						NOT NULL,
-    Rating			ENUM('G', 'PG', 'PG-13', 'R'),		
+    Rating			ENUM('G', 'PG', 'PG-13', 'R'),
     Genre			VARCHAR(50),
-    ReleaseDate		DATE,		 
+    ReleaseDate		DATE,
     StarRating		DECIMAL(2,1),
     MovieLanguage	VARCHAR(30)
 );
 ALTER TABLE movieInfo MODIFY MovieID INT AUTO_INCREMENT PRIMARY KEY;
 
-CREATE TABLE users (	
+CREATE TABLE users (
     userName		VARCHAR(50)			NOT NULL,
-    Email			VARCHAR(50),		
+    Email			VARCHAR(50),
     FavoriteMovie	VARCHAR(50),
-    FavoriteGenre	VARCHAR(50)    
+    FavoriteGenre	VARCHAR(50)
 );
 
 
@@ -32,7 +32,7 @@ CREATE TABLE users (
 --                                              Insert Data                                                                                --
 -- ---------------------------------------------------------------------------------------------------------------------
 
-INSERT INTO movieInfo	
+INSERT INTO movieInfo
 VALUES
 (1,'Glass','R','Thriller', '2019-03-01', 4.5, 'English'),
 (2,'Matrix','R','Thriller', '2019-03-01', 3.1, 'English'),
@@ -68,7 +68,7 @@ VALUES
 ('Ron','ron@hogwarts.com','Goonies','Comedy'),
 ('Luna','luna@hogwarts.com','Alice In Wonderland','Fantasy'),
 ('Ginny','ginny@hogwarts.com','Die Hard','Action'),
-('Neville','neville@hogwarts.com','Home Alone','Foriegn'),
+('Neville','neville@hogwarts.com','Home Alone','Foreign'),
 ('Draco','draco@hogwarts.com','The Grudge','Horror'),
 ('Pansy','pansy@hogwarts.com','Cinderella','Romance'),
 ('Dean','dean@hogwarts.com','Kill Bill', 'Thriller'),

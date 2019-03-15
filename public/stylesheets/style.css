@@ -341,15 +341,21 @@ label {
 
 #profile{
   width: 700px;
-}
-#profile h2{
-  font-size: 25px;
-  font-family:  sans-serif, arial;
+  font-family: arial, sans-serif, arial;
 }
 
+#profile h1{
+  font-size: 25px;
+  font-family:  sans-serif, arial;
+  color:black;
+  margin-left: 0px;
+}
+#profile h2{
+  font-size:15px;
+  font-family:  sans-serif, arial;
+}
 #profile img{
   width:100px;
   margin-top:30px;
-  margin-bottom: 70px;
-  border:2px solid #ccc;
+  margin-bottom: 20px;
 }
