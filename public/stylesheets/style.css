@@ -359,3 +359,8 @@ label {
   margin-top:30px;
   margin-bottom: 20px;
 }
+#blog h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family:  sans-serif, arial;
+}
