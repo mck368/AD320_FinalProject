@@ -119,19 +119,15 @@ line-height: 30px;
 
 .left-box{
   float: left;
-  width: 23%;
+  width: 25%;
 }
 .middle-box{
   float: left;
-  width: 23%;
+  width: 25%;
 }
 .right-box{
   float: left;
-  width: 23%;
-}
-.last-box{
-  float: left;
-  width: 23%;
+  width: 25%;
 }
 
 #myDIV {
@@ -142,7 +138,7 @@ line-height: 30px;
 
 #myDIV h2{
   background-color:white;
-  padding:10px 0px 0px 30px ;
+  padding:10px 0px 0px 30px;
   font-size:20px;
   width:170px;
 }
@@ -157,6 +153,34 @@ line-height: 30px;
 
 #myDIV a {
   text-decoration: none;
+}
+
+#movieDIV {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#movieDIV h2{
+  background-color:white;
+  padding:10px 0px 0px 30px;
+  font-size:20px;
+  width:170px;
+}
+
+#movieDIV img {
+  width: 150px;
+  height: 175px;
+  margin:0px 50px 60px 0px;
+  background-color:white;
+  padding:25px;
+  float: left;
+}
+
+.message{
+  font-size: 16px;
+  width: 780px;
+  margin-top: 80px;
 }
 
 /*************************HEADER**************************/
