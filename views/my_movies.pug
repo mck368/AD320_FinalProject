@@ -1,66 +1,71 @@
 extends layout
 
 block content
+    script(src='http://code.jquery.com/jquery-2.1.0.js')
+    script(src='http://code.jquery.com/ui/1.1.4/jquery-ui.js')
+    script(src='/javascripts/movieList.js')
 
     #wrapper
 
-      #myDIV
-        .left-box
-          h2 Ace Ventura
-          a(href='https://en.wikipedia.org/wiki/Ace_Ventura')
-            img#img0(src='images/ace_ventura.jpg', alt='')
+      #movieDIV
 
-        .middle-box
-          h2 Big Daddy
-          a(href='https://en.wikipedia.org/wiki/Big_Daddy_(1999_film)')
-            img#img1(src='images/big_daddy.jpg', alt='')
+        h2 Ace Ventura
+        img(src='images/ace_ventura.jpg', alt='')
+        .message#0 
+        p
+                
+        h2 Big Daddy
+        img(src='images/big_daddy.jpg', alt='')
+        .message#1 
+        p
 
-        .right-box
-          h2 Elf
-          a(href='https://en.wikipedia.org/wiki/Elf_(film)')
-            img#img2(src='images/elf.jpg', alt='')
+        h2 Elf
+        img(src='images/elf.jpg', alt='')
+        .message#2
+        p
+
+        h2 Glass
+        img(src='images/glass.jpg', alt='')
+        .message#3
+        p
+
+        h2 Happy Gilmore
+        img(src='images/happy_gilmore.jpg', alt='')
+        .message#4
+        p
+
+        h2 Inception
+        img(src='images/inception.jpg', alt='')
+        .message#5 
+        p
+
+        h2 The Lego Movie
+        img(src='images/lego_movie.jpg', alt='')
+        .message#6
+        p
+
+        h2 The Matrix
+        img(src='images/matrix.jpg', alt='')
+        .message#7
+        p
+
+        h2 Murder by Numbers
+        img(src='images/murder_by_numbers.jpg', alt='')
+        .message#8
+        p
+
+        h2 Requiem for a Dream
+        img(src='images/requiem_for_a_dream.jpg', alt='')
+        .message#9
+        p
+
+        h2 The Truman Show
+        img(src='images/truman.jpg', alt='')
+        .message#10
+        p
 
         .last-box
-          h2 Glass
-          a(href='https://en.wikipedia.org/wiki/Glass_(2019_film)')
-            img#img3(src='images/glass.jpg', alt='')
-
-        .left-box
-          h2 Happy Gilmore
-          a(href='https://en.wikipedia.org/wiki/Happy_Gilmore')
-            img#img4(src='images/happy_gilmore.jpg', alt='')
-
-        .middle-box
-          h2 Inception
-          a(href='https://en.wikipedia.org/wiki/Inception')
-            img#img5(src='images/inception.jpg', alt='')
-
-        .right-box
-          h2 The Lego Movie
-          a(href='https://en.wikipedia.org/wiki/The_Lego_Movie')
-            img#img6(src='images/lego_movie.jpg', alt='')
-
-        .last-box
-          h2 The Matrix
-          a(href='https://en.wikipedia.org/wiki/The_Matrix')
-            img#img7(src='images/matrix.jpg', alt='')
-
-        .left-box
-          h2 Murder by Numbers
-          a(href='https://en.wikipedia.org/wiki/Murder_by_Numbers')
-            img#img8(src='images/murder_by_numbers.jpg', alt='')
-
-        .middle-box
-          h2 Requiem for a Dream
-          a(href='https://en.wikipedia.org/wiki/Requiem_for_a_Dream')
-            img#img9(src='images/requiem_for_a_dream.jpg', alt='')
-
-        .right-box
-          h2 The Truman Show
-          a(href='https://en.wikipedia.org/wiki/The_Truman_Show')
-            img#img10(src='images/truman.jpg', alt='')
-
-        .last-box
-          h2 50 First Dates
-          a(href='https://en.wikipedia.org/wiki/50_First_Dates')
-            img#img11(src='images/50_first_dates.jpg', alt='')
+        h2 50 First Dates
+        img(src='images/50_first_dates.jpg', alt='')
+        .message#11
+        p
